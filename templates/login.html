@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+{% block additionalscripts %}
+<link rel="stylesheet" href="static/css/LOGIN.css">
+<link rel="stylesheet" href="static/css/navb.css">
+    <script src="static/js/login.js"></script>
+    <script src="static/js/nav.js"></script>
+{% endblock %}
+{% block body %}
+<div class="container text-center">
+
+        <form method="GET" action="">
+
+
+
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" id='username' required>
+	    <br>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id='password' required>
+
+          <button type="submit" class="login-button" id='button' onclick="retrieveuserinfo()">  <a> Login </a></button>
+        </form>
+        </div>
+
+
+
+{% endblock %}
